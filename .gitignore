@@ -1,0 +1,28 @@
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+
+# PyCharm IDE files
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Miscellaneous
+*.bak
+*.swp
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
