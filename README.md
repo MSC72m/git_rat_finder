@@ -62,7 +62,8 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 ## Usage
 Run the application:
-```
+```bash
+cd git_rat_finder
 python main.py
 ```
 Enter desired option
