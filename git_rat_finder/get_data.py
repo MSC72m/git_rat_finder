@@ -13,7 +13,6 @@ async def get_followers(username, token, followers):
 
             data = response.json()
             if not data:
-                print("No valid data, rerun the program and enter correct credentials")
                 break
 
             followers.extend([follower['login'] for follower in data])
@@ -33,7 +32,6 @@ async def get_following(username, token, following):
 
             data = response.json()
             if not data:
-                print("No valid data, rerun the program and enter correct credentials")
                 break
 
             following.extend([user['login'] for user in data])
