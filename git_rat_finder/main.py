@@ -10,15 +10,15 @@ async def main():
     exceptions = []
 
     options = [
-        "Enter 1 to get your follower list and print them in your terminal",
-        "Enter 2 to get your following list and print them in your terminal",
-        "Enter 3 to unfollow a user",
-        "Enter 4 to follow a user",
-        "Enter 5 to add users to the exception list",
-        "Enter 6 to remove users from the exception list",
-        "Enter 7 to unfollow GitHub rats",
-        "Enter 8 to follow users who follow you but whom you don't follow",
-        "Enter 9 or q to quit"
+        "Show me my followers so I can bask in my popularity.",
+        "Display who I'm stalking—uh, following—on this fine day.",
+        "Unfollow a user—time to make some space in my social circle!",
+        "Follow someone new—let’s expand my network of friends, shall we?",
+        "Add users to the exception list—because everyone needs a VIP section.",
+        "Remove users from the exception list—time to update my exclusive club!",
+        "Unfollow GitHub 'rats'—say goodbye to those pesky freeloaders.",
+        "Become a CHAD: follow those who follow me but I haven’t followed yet.",
+        "or q: Quit—I'll just leave now and come back when I'm ready."
     ]
     username = input('Please enter your username: ')
     token = input('Please enter your GitHub access token: ')
@@ -31,7 +31,7 @@ async def main():
 
     while True:
         for i, option in enumerate(options):
-            print(f"{i + 1} - {option}")
+            print(f"{i + 1}: {option}")
         selected_option = input("Please enter the option you want: ")
 
         if selected_option == '1':
@@ -74,7 +74,7 @@ async def main():
                 if username not in following:
                     await follow_user(username, token)
                     print(f"Followed {username}")
-        elif selected_option in ['9', 'q']:
+        elif selected_option in ['9', 'q', "Q", "quit", "Quit"]:
             break
         else:
             print("Invalid option. Please try again.")
