@@ -45,7 +45,7 @@ Tweak it, improve it, make it your own. The code is yours to play with.
 
 ## Installation
 
-1. **Clone the repository**:
+**Clone the repository**:
    ```sh
    git clone https://github.com/MSC72m/git_rat_finder.git
    cd git_rat_finder
