@@ -61,7 +61,7 @@ async def main():
                 print(f"Failed to follow {user_to_follow}")
         elif selected_option == '5':
             add_exception(exceptions)
-            with open("exception.txt", "w") as file:
+            with open("../exception.txt", "w") as file:
                 for item in exceptions:
                     file.write(item + "\n")
             print("Exceptions updated.")
